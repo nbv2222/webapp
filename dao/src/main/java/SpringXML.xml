@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="client" class="com.getjavajob.bunyatt.springLearning.Client">
+        <constructor-arg value="1"/>
+        <constructor-arg type="java.lang.String" value="FullName"/>
+    </bean>
+    <bean id="eventLogger" class="com.getjavajob.bunyatt.springLearning.ConsoleEventLogger"/>
+    <bean id="app" class="com.getjavajob.bunyatt.springLearning.App">
+        <constructor-arg ref="client"/>
+        <constructor-arg ref="eventLogger"/>
+    </bean>
+
+</beans>

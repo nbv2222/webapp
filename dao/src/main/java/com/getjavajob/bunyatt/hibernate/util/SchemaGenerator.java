@@ -1,4 +1,4 @@
-package com.getjavajob.bunyatt.util;
+package com.getjavajob.bunyatt.hibernate.util;
 
 import org.hibernate.boot.Metadata;
 import org.hibernate.boot.MetadataSources;

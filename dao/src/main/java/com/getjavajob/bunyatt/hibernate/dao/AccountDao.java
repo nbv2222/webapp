@@ -1,4 +1,4 @@
-package com.getjavajob.bunyatt.hibernateDAO;
+package com.getjavajob.bunyatt.hibernate.dao;
 
 import com.getjavajob.bunyatt.entities.Account;
 
@@ -8,7 +8,11 @@ import javax.persistence.Persistence;
 import java.text.ParseException;
 import java.util.Date;
 
-public class Test {
+//todo Не должно быть коммит транзакшн.
+//todo Транзакшны должны быть ограничены контроллером
+//todo
+//todo
+public class AccountDao {
     public static void main(String[] args) throws ParseException {
         Account account = new Account();
         account.setAge(5);

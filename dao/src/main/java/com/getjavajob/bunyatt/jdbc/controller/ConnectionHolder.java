@@ -1,4 +1,4 @@
-package com.getjavajob.bunyatt.controller;
+package com.getjavajob.bunyatt.jdbc.controller;
 
 public class ConnectionHolder {
 

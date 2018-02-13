@@ -1,10 +1,10 @@
-package com.getjavajob.bunyatt.controller;
+package com.getjavajob.bunyatt.jdbc.controller;
 
 import java.sql.Connection;
 
 public class DriverManager {
     //todo Менеджер который отдает определенный коннекшн определенному треду.
-    //todo
+    //todo Он уже реализован в sql пакете. В @TransactionManagerImpl уже заюзан.
 
     public static Connection getConnection(String url){
         Long key = Thread.currentThread().getId();

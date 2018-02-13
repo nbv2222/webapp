@@ -12,7 +12,23 @@
         <spring.ver>5.0.3.RELEASE</spring.ver>
         <hibernate.ver>5.2.12.Final</hibernate.ver>
         <hibernate.JPA.ver>1.0.1.Final</hibernate.JPA.ver>
+        <mySqlConector.ver>6.0.6</mySqlConector.ver>
     </properties>
+
+    <modules>
+        <module>dao</module>
+        <module>common</module>
+    </modules>
+
+    <!--<build>-->
+        <!--<plugins>-->
+            <!--<plugin>-->
+                <!--<groupId>org.projectlombok</groupId>-->
+                <!--<artifactId>lombok-maven-plugin</artifactId>-->
+                <!--<version>1.16.20.0</version>-->
+            <!--</plugin>-->
+        <!--</plugins>-->
+    <!--</build>-->
 
     <dependencies>
         <!--Spring-->
@@ -38,21 +54,29 @@
         </dependency>
 
         <!--JPA_hibernate-->
-        <dependency>
-            <groupId>org.hibernate</groupId>
-            <artifactId>hibernate-core</artifactId>
-            <version>${hibernate.ver}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.hibernate</groupId>
-            <artifactId>hibernate-entitymanager</artifactId>
-            <version>${hibernate.ver}</version>
-        </dependency>
+        <!--<dependency>-->
+            <!--<groupId>org.hibernate</groupId>-->
+            <!--<artifactId>hibernate-core</artifactId>-->
+            <!--<version>${hibernate.ver}</version>-->
+        <!--</dependency>-->
+        <!--<dependency>-->
+            <!--<groupId>org.hibernate</groupId>-->
+            <!--<artifactId>hibernate-entitymanager</artifactId>-->
+            <!--<version>${hibernate.ver}</version>-->
+        <!--</dependency>-->
         <!--<dependency>-->
             <!--<groupId>javax.persistence</groupId>-->
             <!--<artifactId>persistence-api</artifactId>-->
             <!--<version>1.0.2</version>-->
         <!--</dependency>-->
+
+        <!-- UTILS -->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.16.20</version>
+            <scope>provided</scope>
+        </dependency>
 
         <!--Testing-->
         <dependency>

@@ -118,7 +118,7 @@
             <version>1.16.20</version>
             <scope>provided</scope>
         </dependency>
-        <!--todo MERGE TEST-->
+        <!--todo MERGE_TEST-->
 
 
         <dependency>

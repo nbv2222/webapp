@@ -15,7 +15,7 @@ import static jdk.nashorn.internal.runtime.regexp.joni.Config.log;
 @Entity
 @Table(name = "account_tbl")
 //lombok
-@Log4j //не юзается, но для примера, что бы не забыть
+//@Log4j //не юзается, но для примера, что бы не забыть
 @Getter
 @Setter
 @NoArgsConstructor
@@ -31,9 +31,6 @@ public class Account {
     @Temporal(TemporalType.DATE)
     @DateTimeFormat(pattern = "yyyy-MM-dd")
     private Date birthDate;
-
-    public Account() {
-    }
 
     public int getID() {
         return ID;

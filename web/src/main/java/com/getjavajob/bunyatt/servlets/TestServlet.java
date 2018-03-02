@@ -1,5 +1,7 @@
 package com.getjavajob.bunyatt.servlets;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.*;
@@ -20,6 +22,14 @@ public class TestServlet extends HttpServlet {
         PrintWriter out = resp.getWriter();
 
 
+
+
+
+        //todo Реализация вывода JSON с помощью библиотеки JACKSON
+//        ObjectMapper mapper = new ObjectMapper();
+//        String json = mapper.writeValueAsString(new TestJSON("String", 5));
+//        out.print(json);
+
         //todo реализация через сессию
 //        AtomicInteger ai = new AtomicInteger(1);
 //        HttpSession session = req.getSession(true); //True - вернет сессию пользователя либо созданную false - если сессия была, то ее вернет
@@ -28,7 +38,6 @@ public class TestServlet extends HttpServlet {
 //        }
 //        AtomicInteger ai2 = (AtomicInteger) session.getAttribute("counter");
 //        out.print("you have visit this page " + ai2.getAndIncrement() + " times");
-
 
         //todo реализация через куки
 //        int visitCount = 0;
@@ -45,8 +54,6 @@ public class TestServlet extends HttpServlet {
 
 
         out.close();
-
-
     }
 
     @Override
